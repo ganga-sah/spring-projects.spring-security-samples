@@ -14,6 +14,7 @@
 	  - Location of the XML file that defines the root application context
 	  - Applied by ContextLoaderListener.
 	  -->
+	<!--
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
@@ -22,6 +23,7 @@
 			classpath:applicationContext-security.xml
 		</param-value>
 	</context-param>
+	-->
 
    <!-- Nothing below here needs to be modified -->
 
@@ -55,9 +57,11 @@
 	  - The application context is then available via
 	  - WebApplicationContextUtils.getWebApplicationContext(servletContext).
 	-->
+	<!--
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	-->
 
   <!--
 	- Provides core MVC application controller. See contacts-servlet.xml.

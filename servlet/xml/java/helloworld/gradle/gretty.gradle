@@ -10,7 +10,7 @@ Task prepareAppServerForIntegrationTests = project.tasks.create('prepareAppServe
 	description = 'Prepares the app server for integration tests'
 	doFirst {
 		project.gretty {
-			httpPort = -1
+			httpPort = 8888
 		}
 	}
 }
